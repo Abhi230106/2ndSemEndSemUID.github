@@ -1,0 +1,123 @@
+*{
+font-size: 10px;
+  
+}  
+body {
+    background-image: url(wall.png);
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#registrationLink {
+font-size: x-large;
+color: whitesmoke;
+}
+#registrationLink:hover {
+color: gainsboro;
+text-shadow: 0.1rem 0.1rem 0.5rem #A21A24;
+  
+}
+#registration {
+backdrop-filter: blur(7px);
+margin-top: 4.2rem;
+margin-left: 15rem;
+color: white;
+text-align: center;
+border-radius: 15px;
+width: 1150px;
+height: 800px;
+}
+  
+#registrationTitle {
+font-family: cursive;
+color: white;
+margin: auto;
+font-size: 5rem;
+border-spacing: 1rem;
+text-shadow: 0.1rem 0.1rem 2rem black;
+align-items: center;
+}
+  
+#registrationTable {
+margin: auto;
+width: 85rem;
+border: 0.2rem;
+border-style: solid;
+border-color: #A21A24;
+border-collapse: collapse;
+
+}
+#registerButton {
+margin-top: 2rem;
+}
+.regInputs {
+    outline: 0;
+    text-align: left;
+    font-size: large;
+    border: 0;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    letter-spacing: 0.1rem;
+    width: 40rem;
+    border-radius: 15px;
+    color: #000000;
+    opacity: 0.7;
+    height: 50px;
+}
+
+  
+#regPhoneCode {
+    border-right: 0.1rem solid gray;
+    width: 5rem;
+}
+#registerButton {
+    position: relative;
+    width: 15%;
+    height: 7rem;
+    background-color: #A21A24;
+    border-radius: 6%;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    color: white;
+    font-size: 3.5rem;
+    font-family: monospace;
+    border-radius: 15px;
+}
+#registerButton:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #A21A24;
+}
+.formEntryTitles{
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  border: 0.2rem solid #A21A24;
+  border-right: 0;
+  padding: 1rem;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.formEntryInputs {
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  border: 0.2rem solid #A21A24;
+  border-right: 0;
+  padding: 1rem;
+  text-align: left;
+}
+
+.formEntryTitles {
+  width: 22rem;
+}
+
+.formWarnings {
+  border-bottom: 0.2rem solid #A21A24;
+  color: white;
+}
+
+label {
+    font-size: x-large;
+}
+
+  
+  

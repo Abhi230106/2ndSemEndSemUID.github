@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MovieHASH</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="./script.js"></script>
+
+
+
+</head>
+
+<body onload="loadMovies()">
+
+    <div id="registration">
+        <h1 id="registrationTitle">Registration</h1>
+
+        <br><br>
+        <table id="registrationTable">
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="fullName">Full Name:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="text" id="regFullName" name="fullName"
+                        placeholder="Full Name" required></td>
+                <td class="formWarnings" id="nameAlert"></td>
+            </tr>
+
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="emailID">Email:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="email" name="Email ID" id="regEmail"
+                        placeholder="Email ID" required></td>
+                <td class="formWarnings" id="emailAlert"></td>
+
+            </tr>
+
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="phoneNumber">Phone No.</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="tel" maxlength="4" size="1rem"
+                        placeholder="Code" id="regPhoneCode"> <input class="regInputs" type="tel" name="phoneNumber"
+                        id="regPhoneNumber" placeholder="Phone Number" required></td>
+                <td class="formWarnings" id="phoneAlert"></td>
+
+            </tr>
+
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="dateOfBirth">Date Of Birth:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="date" id="regDateOfBirth"
+                        class="formEntryInputs"></td>
+                <td class="formWarnings" id="dateOfBirthAlert"></td>
+
+            </tr>
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="username">Username:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="text" name="username" id="regUsername"
+                        placeholder="Enter a Username" required></td>
+                <td class="formWarnings" id="usernameAlert"></td>
+
+            </tr>
+
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="password">Password:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="password" name="password" id="regPassword"
+                        placeholder="Enter a Password" required></td>
+                <td class="formWarnings" id="passwordAlert"></td>
+            </tr>
+
+            <tr class="registrationTableRow">
+                <th class="formEntryTitles"><label for="passwordConfirm">Confirm Password:</label></th>
+                <td class="formEntryInputs"><input class="regInputs" type="password" name="passwordConfirm"
+                        id="regPasswordConfirm" placeholder="Confirm your Password" required></td>
+                <td class="formWarnings" id="passwordConfirmAlert"></td>
+            </tr>
+        </table>
+        
+        <button id="registerButton" onclick="validateForm()">Register</button>
+    </div>
+</body>
+
+</html>

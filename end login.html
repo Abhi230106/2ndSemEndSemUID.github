@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sheet.css">
+    <script src="./script.js"></script>
+</head>
+<body>	
+    <div id="loginback" style="display: none;">
+		<div>
+			<div>
+				<h1 style="font-size: 30px;">LOGIN:</h1>
+				<div id="details">
+					Username:
+				</div>
+				<input type="text" id="username" style="color: #A21A24; font-size: 2rem;" placeholder="Username">
+				<div id="pdetails">
+					Password:
+				</div>
+				<input type="password" id="Password" style="color: #A21A24; font-size: 2rem;" placeholder="Password">
+			</div>
+			<button onclick="subbut()" id="loginsub">Submit </button>
+
+		</div>
+		<br>
+		Don't have an account? Click <a href="./registration.html" id="registrationLink">here</a> to register
+	</div>
+
+
+
+	<div id="loggedInBack" style="display: none;">
+		<div>
+			<h1 id="welcomeMessage"></h1>
+		</div>
+		<div id="browse">
+			Click to Browse Movies <br> <br>
+			<button id="browseButton" onclick="goToHome()">Browse</button>
+		</div>
+
+	</div>
+</body>
+</html>

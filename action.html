@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MovieFlex</title>
+	<link rel="stylesheet" href="./stylesheet.css">
+    <script src="./script2.js"></script>
+
+	<link rel="icon" href="./OIP.jpg" type="image/icon type">
+
+</head>
+
+<body >
+	<div id="headerBorder">
+		<div id="Header">
+			<img src="flex.png" id="poco" alt="loco" title="Flex - Home" onclick="goToHome()">
+
+			<img src="./userLogin.png" alt="login-as-user" onclick="goToLogin()" id="userLogin" title="Login" />
+			<div class="searchbar">
+
+			 <input type="text" id="search" placeholder="Search">
+			 <button id="searchb" value="Search" onclick="search()">Search</button>
+			 <a href="./index.html"class="navButton">Home</a>
+			 <a href="./registration.html"class="Button">Register</a>
+			 <div class="dropdown">
+				<button class="dropbtn">Catergories</button>
+				<div class="dropdown-content">
+				  <a href="comedy.html">Comedy</a>
+				  <a href="drama.html">Romance/Drama</a>
+				  <a href="sci-fi.html">Sci-Fi</a>
+				  <a href="horror.html">Horror</a>
+				</div>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="contactBar">
+		<h3>Any Queries?</h3>
+		<a><button id="aboutUsButton" class="contactButton" onclick="goToAboutUs()">About us</button></a>
+		<button class="contactButton" onclick="window.open('mailto:mokshgurrala@gmail.com', '_blank')">
+			Mail &nbsp;
+			<img alt="svgImg" height="25px" width="25px"
+				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADbUlEQVR4nO2YzSt8URjHzxgJIZOXlMGCIpmSLCQ1G1ZmwUZWdlaKhWbDxl+grCYrmZIVpVDYTMSGhVJSY4HMUFMibzPNmO+v5/jNdGfuvJw7d7p3cJ96mtO99zzP93Pe5zDGGH6JM70FGCDM6BGm+/CBMUfYT+2RpqYmTE1NYXFxEdPT06ivr9dbIBobGzE/Pw+Xy4XZ2VmuMSPI6OgoPj4+ILW3tzde2WQyaQ5gMpngdDrx+fmZoOn5+RkjIyOpQTo6OmQVpLazs4Pa2lrNIOrq6rC7u5tWD2ltb2+Xg6yuriKb3d/fawbi8/my6llZWZGD+P1+iFjse7PZnHfxZklMEUtq2O/C19eXIhCPx8MnYb4gKJbH41EEQpplIKIm/T4QCGB4eFg1xODgIB4eHmTxlehRBUIWjUaxtLSEkpISxQDFxcVYWFhIGA1ML5CYnZ6eorW1VRiiubkZx8fHwvGFQSYmJviekc0yJXp5ecH4+HhWCNoDnp6eFMeXGu13MzMzcpDYXnJ+fo5MJpLI7XajvLxcBlBaWsqHodr4l5eXsNlsyfG/C11dXfy3rKwMy8vLqhKRUYNQwyhpJJH4pI00SjUngFBXTU5Oxl+MjY3xo4CaMfz6+sqHLDmVRYyliU9aSFPsPWklzWkn+8bGBqqrq/mzlpYWnJyc5AySi7EU8c/OztDW1safV1ZWYm1tTWzVurm5QV9fX8olUkuQaNLS3tPTA6/Xq2z5DYfDHKCoqIi/HxoawuPjo2YggUAADocjfgqmFSoYDOa+j2xtbaGmpoZ/Y7VaNQOx/s9FuUlDXjbEu7s7DAwMJCx3kUgk7xCRSCQhB+Wk3Hnd2Wmozc3NxSva7XZ++syXUSy73R6PT7koZzZTDJKiIv+jtb29rRIBODg4QENDQ0LsHPTkDiKdiKFQSDFA8oLC9ASJeW9vL66vr4Xj3N7eor+/P2083UDIq6qqsL6+njXG5uYmLBZLxli6gsScjiTv7+8pLwySTqyFDcIYQ2dnJy4uLuL1rq6u0N3dLVy/YEDIKyoq+EUfOZWV1C0oEDUuagYIM3qEGUPrb86RkOBZqZBAgsGgHIROoD8NZH9/Xw5CFw30IlPPHB4eagZydHSUVgdp3Nvb47eVMpBf4ExvAQYIM3qE6T58YMwRpn9L40/1yD9VnUNhYhtLCgAAAABJRU5ErkJggg==" />
+		</button>
+
+		<br>
+		<button class="contactButton" onclick="window.open('tel:+91 9652461406','_blank')">
+			Phone
+			<img alt="svgImg" height="25px" width="25px"
+				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADC0lEQVR4nO2ZTUsqURjHp8xyoagbdS0ShIq2t60bk/AlLKiNirhz41oEUyj8EAYKuXFjXyMiQVFJt0Ibw9TQxTzxHPDi1dEZu46e6faHZzMv55wfZ563MwzDMPBDjNn2An5BmP92R/b39+Hy8hKKxSK8vr7CcDgEsTQcDskcDw8PcHFxQeZeC4jf74d2uw3bUqvVAq/X+30QmUwG2WwWaNHd3R3s7u6uDkITxES3t7ergfh8PqBVHo9HGAg6FzobrWq323BwcMAPEggEgHadn5/zg2DYo12FQoEfpNFoCBqs1+tBMpkEs9kMWq0WbDYbVCoV2ITq9To/yMfHB+9A3W6XAMy+azQaYTAYiA7S6/X4QYTo6upqYRiMx+OwCTHrAFEoFAtB9vb24OnpiX4QlmV5ywWM9dSDoNRq9VIQg8EAkgCx2+1LQQ4PD6UBEolEloIkEglpgBSLxYUQFosFPj8/pQEyGAxAqVRylv7Pz8+wCTHrAEGFQqG5wU5OTmBTYtYFghUy5ozpd4+OjkByIKhgMDg34OPjI0gO5O3tDXQ63V/vW61WGI1GICkQVKlUmhs0FouB5EAWOT7215IDGY/H4HQ6OXeG6zPDPINJ02QygV6vJ7XZqoUmIwbIpEc4Pj7mTJDlcvnPcy8vL+Ta7HMYAePxuOB+RjQQVKfTWViHYWh2OBwkaXLdn27OKgI6TVFBJjvD9ZmtYna7ffsgE58Jh8PfBtFoNHSATIfm2TwjxGw2G10gk6SJFcBsObPMbm5u6AOZPlXHz02lUi2FsFqt0O/3/x0EnVVM4f8P7Gei0SgJ1+gPOC8eaFxfX8P7+/t6joOEHtBtU7VajR8kn88D7bq/v+cHwQNi2uXz+fhB5HI5NJtNoFWNRoOskRcE7ezsjBzE0SaWZeH09HRRxOMOg5lMBmhTKpVaFrq5b+CPx3Q6TcXOsCxLIHZ2dlYHmZjb7d5qSK7X6+ByuYRUBPwlAzoXNj8Y9qrVKvk/Ipa63S6ZI5fLkTlXKG2E1T8SMGbbC/gFYX7ijnwB73PPgG363HYAAAAASUVORK5CYII=" />
+		</button>
+
+		<br>
+		<button class="contactButton" onclick=openLinkedin1(),openLinkedin2(),openLinkedin3()>
+			LinkedIn &nbsp;
+			<img alt="svgImg" height="25px" width="25px"
+				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwElEQVR4nO2ZParCQBDHRxQ7jaCtYKE38A4KGrQUBTtLr2AjggfxDHZ+H8RO8QNBk8rm/5jAa54bV7HIrG//ME0yLPvL7GR2d4iI8CVGUU/AgtC/ikij0cByuYTv+4havu9jsVjAdd33QMbjMaRqNBq9BsKRkK56va4H4eUkXfP5XA/ieR6k63a76UFMEVmQb4rIfr9Hq9VCNpsNrNPp4Hg8wjiQSqWiLJzGgaTT6YcBHMeBcSCuYovAxck4kNPphG63i1wuFxjnyOFwQBQi+/sVJrIRgfIrPOSVzmez2QS1KJ/PI5lMIpVKoVwuYzAY4Hw+ywfhwlmtVkPfs2UyGUynU9kgxWLxKcSvJRIJrNdruSDvWKFQwP1+lw8Sj8e1PpPJRC5Iv9/HbrcL/LbbLXq9Xqhvu92WCdJsNt85f6NUKskEWa1WyjH5jkDl72g2o5GBXC4X5Zj8XOUfi8Vkgnw67l9ZEJaNCNmlFSqbIyybI2RzJFQ2R6SJPtmiGAXiGdDouV6vehDunkrXbDbTg/D9rnTVajU9CBu3gKVqOByGFWb1WYCPoNw9lZAznucFyykkEs9BDDSKegIWhL4xIj+0cIVlnzMNuAAAAABJRU5ErkJggg==" />
+		</button>
+		<script>
+			function openLinkedin1() {
+				window.open('https://www.linkedin.com/in/sreeharsha-sadhu-950aa1245/');
+			}
+			function openLinkedin2() {
+				window.open('https://www.linkedin.com/in/hemanth-ramasubbu-7685b2268/');
+			}
+			function openLinkedin3() {
+				window.open('https://www.linkedin.com/in/suhas-kesavan-458503268/');
+
+			}
+		</script>
+
+	</div>
+
+
+	<div id="aboutUs" style="display: none;">
+		<h1 id="Abtitile">About MOVIEFLEX</h1><a rel="bookmark" id="top"></a>
+		<p id="Abcontent">About Us Welcome to our movie review website MOVIEFLEX ! We are a
+				team of first-year B.Tech students—Mokshith,Abhiram,Himesh and Anirudh. With our passion for movies, we
+				embarked on a journey to create this platform using our knowledge of HTML, CSS, and JavaScript.
+
+				As avid movie enthusiasts, we realized the importance of reliable and informative movie reviews to help
+				fellow cinephiles make informed decisions about what to watch.
+
+				Despite being in our early stages of learning web development, we embraced the challenge and worked
+				collaboratively to design and develop this website. Through countless hours of trial and error, and
+				continuous learning, we overcame obstacles and transformed our vision into reality.
+
+				Our goal is to create a space where people can engage in meaningful discussions about movies, share their
+				recommendations, and discover hidden gems.
+
+				We are aware that our journey has just begun, and we have much to learn and improve upon.
+
+				We would like to express our sincere gratitude to all the movie lovers who visit our website and contribute
+				to the community.
+
+				Thank you for joining us on this exciting adventure! Together, let's explore the captivating world of
+				cinema, one review at a time.
+				<br>
+				<br> Made By:
+				<br>
+				- G.MOKSHITH TEJA(BL.EN.U4AIE23041)
+				<br>
+				- Y.ABHIRAM(BL.EN.U4AIE23065)
+				<br> 	
+				- HIMESH(BL.EN.U4AIE23059)
+				<br>
+				- PUNAV ANIRUDH(BL.EN.U4AIE23025)
+				<br>
+
+		</p>
+ </div>
+ <div id="movieList">
+    <button id="nobody" class="movie1b" onclick="goToMovie('nobody')" title="Nobody">
+        <img src="./nobody.jpg" class="moviePoster">
+    </button>
+
+    <button id="johnnyEnglish" class="movie1b" onclick="goToMovie('johnnyEnglish')" title="Johnny English">
+        <img src="./johnnyEnglish.jpg" class="moviePoster">
+    </button>
+
+    <button id="toCatchaKiller" class="movie1b" onclick="goToMovie('toCatchaKiller')" title="To catch a Killer">
+        <img src="./toCatchaKiller.jpg" class="moviePoster">
+    </button>
+
+    <button id="everythingAllAtOnce" class="movie1b" onclick="goToMovie('everythingAllAtOnce')"
+			title="Everything Everywhere All At Once">
+			<img src="./EverythingAllAtOnce.jpg" class="moviePoster">
+	</button>
+
+    <button id="johnWick" class="movie1b" onclick="goToMovie('johnWick')" title="John Wick">
+			<img src="./johnWick.jpg" class="moviePoster">
+	</button>
+
+    <button id="theDarkKnight" class="movie1b" onclick="goToMovie('theDarkKnight')" title="The Dark Knight">
+		<img src="./theDarkKnight.jpg" class="moviePoster">
+	</button>
+ </div>
+
+ 
+	<div id="loginback" style="display: none;">
+		<div>
+			<div>
+				<h1 style="font-size: 30px;">LOGIN:</h1>
+				<div id="details">
+					Username:
+				</div>
+				<input type="text" id="username" style="color: #A21A24; font-size: 2rem;" placeholder="Username">
+				<div id="pdetails">
+					Password:
+				</div>
+				<input type="password" id="Password" style="color: #A21A24; font-size: 2rem;" placeholder="Password">
+			</div>
+			<button onclick="subbut()" id="loginsub">Submit </button>
+
+		</div>
+		<br>
+		Don't have an account? Click <a style="font-size: larger;text-decoration: none;color:#ffffff;font-weight: bold;"href="./registration.html" id="registrationLink">here</a> to register
+	</div>
+
+
+
+	<div id="loggedInBack" style="display: none;">
+		<div>
+			<h1 id="welcomeMessage"></h1>
+		</div>
+		<div id="browse">
+			Click to Browse Movies <br> <br>
+			<button id="browseButton" onclick="goToHome()">Browse</button>
+		</div>
+
+	</div>
+
+
+	<div id="movieDetails" style="display: none;">
+		<div id="infoBar">
+			<div id="poster">
+				<img id="moviePoster" src="" alt="moviePoster">
+			</div>
+			<div id="basicInfo">
+				<table id="movieInfo">
+					<tr>
+						<th class="infoTableData">Genre:</th>
+						<td id="genre" class="infoTableData">
+						</td>
+					</tr>
+					<tr>
+						<th class="infoTableData">Director:</th>
+						<td class="infoTableData" id="director"></td>
+					</tr>
+					<tr>
+						<th class="infoTableData">Starring:</th>
+						<td class="infoTableData" id="actor"></td>
+					</tr>
+
+					<tr>
+						<th class="infoTableData">Ratings:</th>
+						<td class="infoTableData" id="rate"></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+		<div id="contentDiv">
+
+
+			<h1 class="contentHeading">Trailer</h1>
+			<div id="trailer">
+				<iframe width="560" height="315" src="" id="trailerlnk" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+
+
+			<h1 class="contentHeading">About Movie</h1>
+			<div id="aboutMovie">
+				<p id="aboutTxt"></p>
+			</div>
+
+
+			<h1 class="contentHeading">Synopsis</h1>
+			<button id="collapsibleSynopsis" onclick="showSynopsis()">Show Synopsis</button>
+
+			<div id="synopsis" class="hide">
+				<p id="synopsisTxt"></p>
+
+			</div bookmark>
+
+		</div>
+	</div>
+</body>
+
+
+</html>
